@@ -5,13 +5,28 @@
 <meta charset="UTF=8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<style>
+    button {
+        color: lightsteelblue;
+        border: maroon;
+        border-radius: 5px;
+        background-color: gray;
+        padding: 10px;
+        margin: 10px;
+    }
+    img{
+        margin: 10px;
+    }
+    </style>
 </head>
 <body>
     <h3>click on the button and on off the swicth</h3>
-<button onclick="document.getElementById('myimage').src='pic_bulbon.gif'">Turn On The Light</button>
-<img id="myimage" src="pic_bulboff.gif" style="width:100px">
-
+    <img id="myimage" src="pic_bulboff.gif" style="width:100px">
+    <br/>
+    <br/>
+    <button onclick="document.getElementById('myimage').src='pic_bulbon.gif'">Turn On The Light</button>
+<br/>
+<br/>
 <button onclick="document.getElementById('myimage').src='pic_bulboff.gif'">Turn Off The Light</button>
 </body>
 </html>
