@@ -5,13 +5,33 @@
 <meta charset="UTF=8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    button{
+        padding: 10px;
+        background-color:lime;
+        background-image: linear-gradient(red,yellow); 
+        margin: 10px;
+    }
+    </style>
+    <script type="text/javascript"> 
+    function display_c(){
+    var refresh=1000; // Refresh rate in milli seconds
+    mytime=setTimeout('display_ct()',refresh)
+    }
+    
+    function display_ct() {
+    var x = new Date()
+    document.getElementById('ct').innerHTML = x;
+    display_c();
+     }
+    </script>=
 </head>
 <body>
-<h3>Click the button to display the time</h3>
-<button onclick="getElementById('demo').innerHTML=Date()"><b>What is the time?</b class="text-center"></button>
-<p id="demo"></p>
-
-
+    <p>Click the button to display the time</p>
+    
+    <button onclick=display_ct();><p><b>what is the time</b></p></button>
+    <br/> <br/> 
+<p id='ct' ></p>
 
 </body>
 </html>
